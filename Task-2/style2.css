@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(pexels-maumascaro-376533.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+}
+header .container{
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo img{
+    height: 35px;
+    width: 30px;
+}
+.logo p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b1e4e4;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 14px;
+}
+li{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: #ef0101;
+    font-weight: 300; 
+}
+.main{
+    width: 100%;
+    width: 90vh;
+    position: absolute;
+}
+.main img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    filter: drop-shadow(20px 20px 40px rgba(255, 255, 255, 0.375));
+}
+.content{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    margin: auto;
+    height: 100%;
+}
+.todo{
+    display: flex;
+    padding: 14px;
+    cursor: pointer 6 19,auto;
+}
+.todo-value{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    flex-grow: 1;
+    border-bottom: 2px solid rgba(230, 230, 14, 0.793);
+}
+.todo-checkbox{
+    cursor: inherit;
+
+}
+.todo:has(.todo-checkbox:checked){
+    color: rgb(109, 241, 241);
+    background: #318a2e5c;
+    text-decoration: line-through 1.5px;
+    order: 1;
+}
